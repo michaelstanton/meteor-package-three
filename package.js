@@ -1,17 +1,17 @@
 Package.describe({
-	summary: "Three.js core library + several useful extensions.",
-	version: "0.70.0",
+	summary: "Three.js core library + several useful extensions from the examples.",
+	version: "0.71.0",
 	name: "davidcittadini:three",
 	git: "https://github.com/davidcittadini/meteor-package-three.git",
 });
 
 Package.on_use(function(api) {
-	api.versionsFrom("1.0.3.2");
+	api.versionsFrom("1.0.4");
 	api.export("THREE");
 
 	api.add_files([
 		// Core
-		"lib/three.min.js",
+		"lib/three.js",
 
 		// Controls
 		"extras/controls/EditorControls.js",
@@ -30,6 +30,7 @@ Package.on_use(function(api) {
 		"extras/loaders/PLYLoader.js",
 		"extras/loaders/SceneLoader.js",
 		"extras/loaders/STLLoader.js",
+		"extras/loaders/SVGLoader.js",
 		"extras/loaders/UTF8Loader.js",
 		"extras/loaders/VRMLLoader.js",
 		"extras/loaders/VTKLoader.js",
@@ -43,7 +44,8 @@ Package.on_use(function(api) {
 		"extras/renderers/Projector.js",
 		"extras/renderers/RaytracingRenderer.js",
 		"extras/renderers/SoftwareRenderer.js",
-		"extras/renderers/SVGRenderer.js"
+		"extras/renderers/SVGRenderer.js",
+		"extras/renderers/WebGLDeferredRenderer"
 	]);
 });
 

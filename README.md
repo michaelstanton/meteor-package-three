@@ -1,16 +1,17 @@
-# plantage.menu Web Application
+# Three - JavaScript 3D Engine #
 
-## Three.js - A JavaScript 3D library, repackaged for Meteor ##
+## Introduction ###
 
-This is a Meteor package for including Three.js in a Meteor project using the Meteor package manager.
+This is a Meteor package for including three.js in a Meteor project using the Meteor package manager.
+This packaged implementation uses three.js version R71.
 
-For extra info on Three.js or Meteor please refer to their respective homepages:
+For extra info on three.js or Meteor please refer to their respective homepages:
 
-[Three.js](http://threejs.org)
+	[tween.js](http://threejs.org)
+	[Meteor](http://meteor.com)
 
-[Meteor](http://meteor.com)
+## How to install ##
 
-## How to install
-You run the following from the command line:
+Run the following from the command line:
 
-`meteor add davidcittadini:three`
+	`meteor add davidcittadini:three`
