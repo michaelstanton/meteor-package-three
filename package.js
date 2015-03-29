@@ -1,13 +1,13 @@
 Package.describe({
 	summary: "Three.js core library + several useful extensions from the examples.",
-	version: "0.71.2",
+	version: "0.71.3",
 	name: "davidcittadini:three",
 	git: "https://github.com/davidcittadini/meteor-package-three.git",
 });
 
 Package.on_use(function(api) {
-	api.versionsFrom("1.0.4");
-	api.export("THREE");
+	api.versionsFrom('METEOR@1.0');
+	api.export('THREE', 'client');
 
 	api.add_files([
 		// Core
@@ -208,7 +208,7 @@ Package.on_use(function(api) {
 		"extras/wip/proxies/ProxyVector2.js",
 		"extras/wip/proxies/ProxyVector3.js",
 		"extras/wip/proxies/ProxyVector4.js"
-	]);
+	], 'client');
 });
 
 Package.onTest(function(api) {

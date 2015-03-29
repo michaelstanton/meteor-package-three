@@ -3,7 +3,8 @@
 ## Introduction ###
 
 This is a Meteor package for including three.js in a Meteor project using the Meteor package manager.
-This packaged implementation uses three.js version R71.
+This packaged implementation uses three.js version R71.  This is limited to be a client-side
+package only.
 
 For extra info on three.js or Meteor please refer to their respective homepages:
 
