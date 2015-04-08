@@ -1,6 +1,6 @@
 Package.describe({
 	summary: "Three.js core library + several useful extensions from the examples.",
-	version: "0.71.11",
+	version: "0.71.12",
 	name: "davidcittadini:three",
 	git: "https://github.com/davidcittadini/meteor-package-three.git",
 });
