@@ -2,19 +2,15 @@
  * @author mrdoob / http://mrdoob.com/
  */
 
-// DAVID CITTADINI: This name of this file was modified so that it loaded
-// before CircleTypedGeometry.js
-
-THREE.IndexedTypedGeometry = function () {
+THREE.IndexedGeometry2 = function () {
 
 	THREE.BufferGeometry.call( this );
 
 };
 
-THREE.IndexedTypedGeometry.prototype = Object.create( THREE.BufferGeometry.prototype );
-THREE.IndexedTypedGeometry.prototype.constructor = THREE.IndexedTypedGeometry;
+THREE.IndexedGeometry2.prototype = Object.create( THREE.BufferGeometry.prototype );
 
-THREE.IndexedTypedGeometry.prototype.setArrays = function ( indices, vertices, normals, uvs ) {
+THREE.IndexedGeometry2.prototype.setArrays = function ( indices, vertices, normals, uvs ) {
 
 	this.indices = indices;
 	this.vertices = vertices;

@@ -44,7 +44,7 @@ THREE.CSS3DRenderer = function () {
 	var _widthHalf, _heightHalf;
 
 	var matrix = new THREE.Matrix4();
-	
+
 	var cache = {
 		camera: { fov: 0, style: '' },
 		objects: {}
@@ -177,7 +177,6 @@ THREE.CSS3DRenderer = function () {
 			var cachedStyle = cache.objects[ object.id ];
 
 			if ( cachedStyle === undefined || cachedStyle !== style ) {
-
 				element.style.WebkitTransform = style;
 				element.style.MozTransform = style;
 				element.style.oTransform = style;
@@ -233,7 +232,7 @@ THREE.CSS3DRenderer = function () {
 			cameraElement.style.MozTransform = style;
 			cameraElement.style.oTransform = style;
 			cameraElement.style.transform = style;
-			
+
 			cache.camera.style = style;
 
 		}

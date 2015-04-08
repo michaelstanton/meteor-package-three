@@ -1,12 +1,12 @@
 Package.describe({
 	summary: "Three.js core library + several useful extensions from the examples.",
-	version: "0.71.5",
+	version: "0.71.11",
 	name: "davidcittadini:three",
 	git: "https://github.com/davidcittadini/meteor-package-three.git",
 });
 
 Package.on_use(function(api) {
-	api.versionsFrom('METEOR@1.0');
+	api.versionsFrom("0.9.0");
 	api.export('THREE', 'client');
 
 	api.add_files([
@@ -120,7 +120,6 @@ Package.on_use(function(api) {
 		"extras/renderers/CanvasRenderer.js",
 		"extras/renderers/CSS2DRenderer.js",
 		"extras/renderers/CSS3DRenderer.js",
-		"extras/renderers/CSS3DStereoRenderer.js",
 		"extras/renderers/Projector.js",
 		"extras/renderers/RaytracingRenderer.js",
 		"extras/renderers/SoftwareRenderer.js",
@@ -168,23 +167,23 @@ Package.on_use(function(api) {
 		"extras/utils/GeometryUtils.js",
 		"extras/utils/ShadowMapViewer.js",
 		"extras/utils/UVsDebug.js",
+		"extras/wip/IndexedGeometry2.js",
+		"extras/wip/IndexedTypedGeometry.js",
 		"extras/wip/CircleTypedGeometry.js",
 		"extras/wip/GeometryEditor.js",
-		"extras/wip/IndexedTypedGeometry.js",
 		"extras/wip/PlaneTypedGeometry.js",
 		"extras/wip/ProxyGeometry.js",
 		"extras/wip/TypedGeometry.js",
 		"extras/loaders/ctm/ctm.js",
 		"extras/loaders/ctm/CTMLoader.js",
-		"extras/loaders/ctm/CTMWorker.js",
 		"extras/loaders/ctm/lzma.js",
 		"extras/loaders/gltf/glTF-parser.js",
 		"extras/loaders/gltf/glTFAnimation.js",
 		"extras/loaders/gltf/glTFLoader.js",
 		"extras/loaders/gltf/glTFLoaderUtils.js",
 		"extras/renderers/plugins/DepthPassPlugin.js",
-		"extras/wip/benchmark/BoxGeometry2.js",
 		"extras/wip/benchmark/Geometry2.js",
+		"extras/wip/benchmark/BoxGeometry2.js",
 		"extras/wip/benchmark/Geometry2Loader.js",
 		"extras/wip/benchmark/Geometry3.js",
 		"extras/wip/benchmark/Geometry4.js",
@@ -199,7 +198,6 @@ Package.on_use(function(api) {
 		"extras/wip/benchmark/PlaneGeometry3.js",
 		"extras/wip/benchmark/PlaneGeometry5.js",
 		"extras/wip/benchmark/PlaneGeometry6.js",
-		"extras/wip/benchmark/PlaneGeometry99.js",
 		"extras/wip/benchmark/TypedGeometry.js",
 		"extras/wip/proxies/MultiColor.js",
 		"extras/wip/proxies/MultiVector3.js",

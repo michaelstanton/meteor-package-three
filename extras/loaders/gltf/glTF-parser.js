@@ -47,7 +47,8 @@
     or false if a callback on client side will notify the loader that the next handle method can be called.
 
 */
-var global = window;
+// DAVID CITTADINI: Remove the var
+//var global = window;
 (function (root, factory) {
 	if (typeof exports === 'object') {
         // Node. Does not work with strict CommonJS, but
